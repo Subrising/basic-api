@@ -1,0 +1,23 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/5f392bee1b6d421068bc41a5
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "David",
+    "subscribedToChannel": "Meme"
+}
+
+###
+PATCH http://localhost:3000/subscribers/5f392bee1b6d421068bc41a5
+Content-Type: application/json
+
+{
+    "name": "Dan",
+    "subscribedToChannel": "Meme 2"
+}
